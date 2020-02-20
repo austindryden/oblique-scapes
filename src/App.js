@@ -1,13 +1,12 @@
 import React from 'react';
 import './App.css';
-import pic from "./photos/noguchi15.jpg";
-
+import ObiApp from "./ObiApp";
 
 function App() {
   return (
     <div className="App">
       <p>Taking Play Mountain(by Strategy)</p>
-      <img src={pic}></img>
+      <ObiApp />
     </div>
   );
 }
