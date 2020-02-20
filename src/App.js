@@ -1,12 +1,13 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
+import pic from "./photos/noguchi15.jpg";
+
 
 function App() {
   return (
     <div className="App">
       <p>Taking Play Mountain(by Strategy)</p>
-      <img src="~/public/photos/noguchi-15.jpg"></img>
+      <img src={pic}></img>
     </div>
   );
 }
