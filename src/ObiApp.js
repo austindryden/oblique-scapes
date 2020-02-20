@@ -5,16 +5,20 @@ export default class ObiApp extends React.Component{
     constructor(props){
         super(props);
         this.state = {
-            color:true
+            colorMode:true
         }
     }
 
     render(){
         return(<div>
-            
-            <CardDeck />
+            <button onClick={this._changeColor}> {this.state.colorMode ? "Black and White" : "      Full Color      "}</button>
+            <CardDeck colorMode={this.state.colorMode} />
         </div>)
     }
 
-    
+    _changeColor =()=>{
+        let newState = {...this.state};
+        newState.colorMode = !newState.colorMode;
+        this.setState(newState);
+    }    
 }

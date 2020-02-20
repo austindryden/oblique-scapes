@@ -5,7 +5,7 @@ import ObiApp from "./ObiApp";
 function App() {
   return (
     <div className="App">
-      <p>Taking Play Mountain(by Strategy)</p>
+      <p>Taking Play Mountain (by Strategy)</p>
       <ObiApp />
     </div>
   );

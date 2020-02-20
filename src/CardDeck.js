@@ -14,8 +14,7 @@ export default class CardDeck extends React.Component{
     render(){
         return(<div className="card-deck">
             <button onClick={this._newCardClick}>draw a card.</button>
-            {
-            this.state.cardStack.length == 0 ? "" : <Card image={this.state.cardStack[this.state.currentCardIndex].image} strat={this.state.cardStack[this.state.currentCardIndex].strat} />}
+            {this.state.cardStack.length === 0 ? "" : <Card image={this.state.cardStack[this.state.currentCardIndex].image} strat={this.state.cardStack[this.state.currentCardIndex].strat} colorMode={this.props.colorMode} />}
             <br />
             {this.state.currentCardIndex < (this.state.cardStack.length-1) ? <button onClick={this._backClick}>back</button>:""}
             {(this.state.currentCardIndex!==0) ? <button onClick={this._forwardClick}>forward</button> : "" }
