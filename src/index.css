@@ -32,8 +32,15 @@ html,body {
 }
 
 .about-popover > *{
-  /* position: absolute; */
-  background-color: white;
+  position: absolute;
   height: 800px;
   width: 900px;
+}
+
+.popoverBW > *{
+  background-color: white;
+}
+
+.popoverColor > *{
+  background-color: rgb(48, 92, 75);
 }

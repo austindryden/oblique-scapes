@@ -2,7 +2,7 @@ import React from "react";
 
 export default function About({handleClick, colorMode}){
     // let colorStyle = colorMode ? {"backgroundColor" :"rgba(68,119,174,0.6)"} : {"backgroundColor" :"rgba(0,0,0,0.4)"};
-    return(<div onClick={handleClick} className="about-popover" style={colorMode ? {"backgroundColor" :"rgba(68,119,174,0.6)"} : {"backgroundColor" :"rgba(0,0,0,0.4)"}}>
+    return(<div onClick={handleClick} className={colorMode ? "about-popover popoverColor" : "about-popover popoverBW"} style={colorMode ? {"backgroundColor" :"rgba(68,119,174,0.6)"} : {"backgroundColor" :"rgba(0,0,0,0.4)"}}>
 <div>
 <h2>Taking Play Mountain (By Strategy) by Austin Dryden</h2>
 <h3>an app, born out of writers block, to escape writers block</h3>
