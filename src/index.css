@@ -31,10 +31,14 @@ html,body {
   left:0;
 }
 
+img{
+  max-width: 90%;
+}
+
 .about-popover > *{
   position: absolute;
-  height: 800px;
-  width: 900px;
+  height: 90%;
+  width: 90%;
 }
 
 .popoverBW > *{
