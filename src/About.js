@@ -4,7 +4,7 @@ export default function About({handleClick, colorMode}){
     // let colorStyle = colorMode ? {"backgroundColor" :"rgba(68,119,174,0.6)"} : {"backgroundColor" :"rgba(0,0,0,0.4)"};
     return(<div onClick={handleClick} className={colorMode ? "about-popover popoverColor" : "about-popover popoverBW"} style={colorMode ? {"backgroundColor" :"rgba(68,119,174,0.6)"} : {"backgroundColor" :"rgba(0,0,0,0.4)"}}>
 <div className="aboutCopy">
-<h2>Taking Play Mountain (By Strategy) by Austin Dryden</h2>
+<h2>Taking Play Mountain (by Strategy) by Austin Dryden</h2>
 <h3>an app, born out of writers block, to escape writers block</h3>
 <br />Sometimes, the best solutions come from changing your perspectives, and to challenge your own conventional thinking. If an answer can’t be found, maybe change the question entirely. Every day, dilemmas without obvious solutions present themselves. Over the years, whenever I’ve found myself with small scale situations without obvious answers, I’ve relied on a few different methods to shake up my thought processes. While struggling to come up with an idea for this project, I found myself thinking about two artistic projects, in particular : “Oblique Strategies”, by Brian Eno and Peter Schmidt, and “Play Mountain”, by Isamu Noguchi. Both works are based in the idea of freeing your mind from normal thought patterns, so even if its not the most obvious pairing to most, to me, they feel of a similar kind. <br />
 
